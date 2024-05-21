@@ -1,0 +1,134 @@
+/* 공통 */
+* {
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+    width: 75%; /* 왼쪽 요소의 너비를 70%로 설정 */
+    background-color: #fffefe;
+    object-fit: fill;
+    overflow:hidden;
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    width: 25%; /* 오른쪽 요소의 너비를 30%로 설정 */
+    background-color: #eafdff;
+}
+
+/* 템플릿 */
+.login-form-wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-inner {
+    width: 320px;
+    padding-bottom: 24px;
+}
+
+/* Alert */
+.alert {
+    text-align: center;
+    position: fixed;
+    margin-top: 18px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: green;
+    color: white;
+}
+
+.alert-warning {
+    background-color: yellow;
+}
+
+.alert-error {
+    background-color: crimson;
+    color: white;
+}
+
+.alert-info {
+    background-color: lightblue;
+    color: white;
+}
+
+
+/* 제목 */
+.app-name-wrapper {
+    margin-bottom: 36px;
+    text-align: center;
+    min-height: 230px;
+}
+.app-name-wrapper .app-name {
+    font-size: 28px;
+}
+.app-name-wrapper img {
+    width: 100%;
+    max-width: 240px;
+}
+
+
+/* Form */
+.app-form {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+.app-form label > div {
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 6px;
+    padding-left: 2px;
+}
+.app-form input {
+    width: 100%;
+    height: 48px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline-width: 0;
+    font-size: 16px;
+}
+.app-form button {
+    background-color: #90d8f7;
+    border: none;
+    height: 48px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 999px;
+    transition: background-color ease-in 0.1s;
+}
+.app-form button:hover {
+    background-color: #56a0c0;
+}

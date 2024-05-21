@@ -1,0 +1,9 @@
+{
+  "themes": [{
+    "name" : "mvp",
+    "types": [ "login" ]
+  }, {
+    "name" : "custom-test",
+    "types": [ "login" ]
+  }]
+}
