@@ -1,3 +1,11 @@
+테마 만들기
+===============
+1. themes 폴더 밑에 내가 만들 테마 이름으로 폴더 생성
+2. 이후, login 폴더 생성!
+3. login 폴더 아래에 login 테마 관련하여 개발 진행
+4. 해당 파일 keycloak pod에 복사(nfs로 mount하여 진행 하긴 했음)
+5. keycloak에서 테마 적용 확인
+
 Creating Themes
 ===============
 
